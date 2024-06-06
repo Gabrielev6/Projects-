@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> <!-- parte in javascript -->
+    <link rel="stylesheet" href="style1.css">
+    <style>
+      /* Aggiungi questa parte di stile per personalizzare l'altezza della navbar */
+      .navbar-custom {
+        height: 20vh; /* Imposta l'altezza al 20% dell'altezza della viewport */
+      }
+
+      /* Aggiungi margine superiore al contenuto subito sotto la navbar */
+      .content-below-navbar {
+        margin-top: 20vh; /* Imposta il margine superiore al 20% dell'altezza della viewport */
+      }
+
+      /* Aggiungi stile per il testo "Aerospace 2.0" */
+      .brand-text {
+        font-size: 300%; /* Imposta la dimensione del testo al 30% in più */
+        margin-left: 40%; /* Posiziona a destra del 20% */
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-custom bg-success navbar-dark py-2">
+        <div class="container-fluid">
+          <a class="navbar-brand brand-text" href="#">Aerospace 2.0</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav  w-25 justify-content-between justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>                 
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 text-center content-below-navbar">
+        <!-- Il resto del tuo contenuto rimane invariato -->
+        <!-- ... -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+      window.onscroll = function() { scrollFunction() };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.querySelector(".navbar-custom").style.position = "fixed";
+        } else {
+          document.querySelector(".navbar-custom").style.position = "static";
+        }
+      }
+    </script> <!-- parte in javascript -->
+
+    <div class="container mt-5 text-center content-below-navbar">
+        <!-- Posiziona la prima immagine sotto la navbar e centrata -->
+        <div class="row">
+          <div class="col-md-4 mx-auto">
+            <div class="card">
+              <img src="https://ba.scene7.com/is/image/ba/boeing-777-200-sunset-flight:21-9?ts=1702578493731&dpr=off" class="card-img-top" alt="Aereo 1">
+              <div class="card-body">
+                <h5 class="card-title">Boeing 777</h5>
+                <p class="card-text">Il Boeing 777 è un aereo di linea a fusoliera larga a lungo raggio prodotto dall'industria statunitense Boeing a partire dalla metà degli anni novanta. Dotato di due motori a turboventola, è il più grande bimotore del mondo</p>
+                <a href="https://it.wikipedia.org/wiki/Boeing_777" class="btn btn-primary" target="_blank">Dettagli</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Immagine 2 -->
+        <div class="col-md-4 mb-4 mx-auto">
+          <div class="card">
+            <img src="https://img.freepik.com/premium-photo/bombardier-global-7500-luxury-horizon_921479-1399.jpg" class="card-img-top" alt="Aereo 2">
+            <div class="card-body">
+              <h5 class="card-title">Global 7000</h5>
+              <p class="card-text">Il Global 7000 è stato pensato per competere sul mercato dei jet d'affari. Per battere la concorrenza i progettisti hanno puntato su aumento di spazio in cabina passeggeri, velocità, autonomia e rispetto delle normative anti-inquinamento. Lo spazio in cabina, suddivisa in quattro compartimenti, viene dichiarato di progetto essere di 74,67 m³, cioè un 20% circa in più rispetto ai migliori concorrenti attuali.</p>
+              <a href="https://it.wikipedia.org/wiki/Bombardier_Global_7000" class="btn btn-primary" target="_blank">Dettagli</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Immagine 3 -->
+        <div class="col-md-4 mb-4 mx-auto">
+          <div class="card">
+            <img src="https://i0.wp.com/www.aviation-report.com/wp-content/uploads/2017/07/A380plus_01_.jpg?resize=750%2C400&ssl=1" class="card-img-top" alt="Aereo 3">
+            <div class="card-body">
+              <h5 class="card-title">Airbus A380</h5>
+              <p class="card-text">L'Airbus A380, prodotto dalla Airbus, è un aereo di linea quadrimotore a doppio ponte, in grado di trasportare 853 persone in versione charter oppure 525 nella tipica configurazione a tre classi. Il primo volo di prova è avvenuto il 27 aprile 2005. La prima consegna è stata effettuata il 15 ottobre 2007 alla compagnia aerea Singapore Airlines,[5] che il 25 ottobre ha realizzato il primo volo commerciale, da Singapore a Sydney.[6] L'utilizzatore principale è la Emirates (compagnia aerea di bandiera dell'Emirato di Dubai).</p>
+              <a href="link_aereo_3" class="btn btn-primary" target="_blank">Dettagli</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
+
